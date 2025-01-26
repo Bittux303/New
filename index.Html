@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Comment Automation</title>
+</head>
+<body>
+    <h1>Facebook Comment Automation</h1>
+    <form action="/send_comment" method="POST" enctype="multipart/form-data">
+        <label for="cookies_file">Upload your cookies file:</label><br>
+        <input type="file" name="cookies_file" required><br><br>
+
+        <label for="header_name">Enter header name (e.g., User-Agent):</label><br>
+        <input type="text" name="header_name" required><br><br>
+
+        <label for="delay_seconds">Enter delay seconds before sending comment:</label><br>
+        <input type="number" name="delay_seconds" required><br><br>
+
+        <label for="comment_file">Upload comment text file:</label><br>
+        <input type="file" name="comment_file" required><br><br>
+
+        <button type="submit">Send Comment</button>
+    </form>
+</body>
+</html>
